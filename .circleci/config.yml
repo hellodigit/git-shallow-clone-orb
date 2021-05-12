@@ -51,7 +51,7 @@ workflows:
           requires:
             - orb-tools/lint
       - orb-tools/publish-dev:
-          orb-name: guitarrapc/git-shallow-clone
+          orb-name: hellodigit/git-shallow-clone
           requires:
             - orb-tools/pack
           filters:
@@ -135,7 +135,7 @@ workflows:
       # patch, minor, or major publishing
       - orb-tools/dev-promote-prod:
           name: dev-promote-patch
-          orb-name: guitarrapc/git-shallow-clone
+          orb-name: hellodigit/git-shallow-clone
           requires: *prod-deploy_requires
           filters:
             branches:
@@ -144,7 +144,7 @@ workflows:
               only: /master-patch.*/
       - orb-tools/dev-promote-prod:
           name: dev-promote-minor
-          orb-name: guitarrapc/git-shallow-clone
+          orb-name: hellodigit/git-shallow-clone
           release: minor
           requires: *prod-deploy_requires
           filters:
@@ -154,7 +154,7 @@ workflows:
               only: /master-minor.*/
       - orb-tools/dev-promote-prod:
           name: dev-promote-major
-          orb-name: guitarrapc/git-shallow-clone
+          orb-name: hellodigit/git-shallow-clone
           release: major
           requires: *prod-deploy_requires
           filters:

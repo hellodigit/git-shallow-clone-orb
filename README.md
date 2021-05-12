@@ -1,13 +1,13 @@
 ## git-shallow-clone-orb
-[![CircleCI](https://circleci.com/gh/guitarrapc/git-shallow-clone-orb.svg?style=svg)](https://circleci.com/gh/guitarrapc/git-shallow-clone-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/guitarrapc/git-shallow-clone)](https://circleci.com/orbs/registry/orb/guitarrapc/git-shallow-clone)
+[![CircleCI](https://circleci.com/gh/hellodigit/git-shallow-clone-orb.svg?style=svg)](https://circleci.com/gh/hellodigit/git-shallow-clone-orb) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/hellodigit/git-shallow-clone)](https://circleci.com/orbs/registry/orb/hellodigit/git-shallow-clone)
 
 ## Usage
 
-See the [orb registry listing](http://circleci.com/orbs/registry/orb/guitarrapc/git-shallow-clone) for usage guidelines.
+See the [orb registry listing](http://circleci.com/orbs/registry/orb/hellodigit/git-shallow-clone) for usage guidelines.
 
 ## Contributing
 
-We welcome [issues](https://github.com/guitarrapc/git-shallow-clone-orb/issues) to and [pull requests](https://github.com/guitarrapc/git-shallow-clone-orb/pulls) against this repository!
+We welcome [issues](https://github.com/hellodigit/git-shallow-clone-orb/issues) to and [pull requests](https://github.com/hellodigit/git-shallow-clone-orb/pulls) against this repository!
 
 ## MEMO
 
@@ -26,8 +26,8 @@ setup orb account and namespace.
 ```shell
 # require perconal api tokens
 $ circleci setup
-$ circleci namespace create guitarrapc github guitarrapc
-$ circleci orb create guitarrapc/git-shallow-clone
+$ circleci namespace create hellodigit github hellodigit
+$ circleci orb create hellodigit/git-shallow-clone
 ```
 
 validate before publish.
@@ -41,7 +41,7 @@ publish orb to the alpha.
 
 ```
 $ cd ./src
-$ circleci orb publish orb.yml guitarrapc/git-shallow-clone@dev:alpha
+$ circleci orb publish orb.yml hellodigit/git-shallow-clone@dev:alpha
 ```
 
 
@@ -49,12 +49,12 @@ publish orb to the dev.
 
 ```
 $ cd ./src
-$ circleci orb publish orb.yml guitarrapc/git-shallow-clone@dev:0.x.0
+$ circleci orb publish orb.yml hellodigit/git-shallow-clone@dev:0.x.0
 ```
 
 publish orb to the production.
 
 ```
 $ cd ./src
-$ circleci orb publish promote guitarrapc/git-shallow-clone@0.x.0
+$ circleci orb publish promote hellodigit/git-shallow-clone@0.x.0
 ```
